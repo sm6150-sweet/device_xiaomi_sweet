@@ -164,6 +164,13 @@ on charger
     start vendor.power_off_alarm
 
 service vendor.thermal-engine /vendor/bin/thermal-engine
+
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
+
     class main
     user root
     socket thermal-send-client stream 0666 system system
