@@ -190,8 +190,7 @@ PRODUCT_PACKAGES += \
     libpiex_shim
 
 PRODUCT_PACKAGES += \
-    libsdmcore-shim \
-    libgui_vendor
+    libsdmcore-shim
 
 # Fstab
 PRODUCT_COPY_FILES += \
