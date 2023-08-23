@@ -134,6 +134,13 @@ BOARD_KERNEL_CMDLINE += loop.max_part=7
 KERNEL_LD := LD=ld.lld
 BOARD_KERNEL_CMDLINE += kpti=off
 
+# LiveDisplay
+ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
+    SOONG_CONFIG_NAMESPACES += livedisplay
+    SOONG_CONFIG_livedisplay += enabled
+    SOONG_CONFIG_livedisplay_enabled := true
+endif
+
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
