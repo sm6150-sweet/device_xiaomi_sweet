@@ -28,6 +28,18 @@ source "${HELPER}"
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
+function vendor_imports() {
+    cat <<EOF >>"$1"
+		"device/xiaomi/sweet",
+		"hardware/qcom-caf/sm8150",
+		"hardware/qcom-caf/wlan",
+		"hardware/xiaomi",
+		"vendor/qcom/opensource/dataservices",
+		"vendor/qcom/opensource/display",
+EOF
+}
+
+
 # Warning headers and guards
 write_headers
 
