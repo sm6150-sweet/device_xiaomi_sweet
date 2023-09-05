@@ -379,7 +379,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-voltage
+    $(LOCAL_PATH)/overlay-bliss
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
@@ -440,9 +440,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
     $(LOCAL_PATH)/configs/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
-
-PRODUCT_PACKAGES += \
-    FlashOverlay
 
 # Sensors
 PRODUCT_COPY_FILES += \
