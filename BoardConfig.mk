@@ -134,6 +134,7 @@ BOARD_KERNEL_CMDLINE += loop.max_part=7
 KERNEL_LD := LD=ld.lld
 BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_CMDLINE += cgroup_disable=pressure
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
