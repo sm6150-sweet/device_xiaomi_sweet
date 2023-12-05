@@ -84,6 +84,7 @@ vendor/firmware/osc_rtp_24K_5s.bin
 -vendor/lib/libaudioparsers.so
 -vendor/lib/libaudioroute_ext.so
 -vendor/lib/vndk/libxlog.so
+-vendor/lib/libqtigef.so
 
 # Audio extensions
 -vendor/lib/btaudio_offload_if.so
@@ -853,6 +854,7 @@ vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
 -vendor/lib64/libdlbdsservice.so
 -vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 -vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/libstagefright_foundation-v33.so|aaf94ecdcdd205d5d9bd443607308666acc4ee05
 
 # Peripheral Manager
 -vendor/bin/pm-proxy
