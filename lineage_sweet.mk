@@ -12,17 +12,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit common Voltage OS  Stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 TARGET_BOOT_ANIMATION_RES := 2160
 PRODUCT_NAME := voltage_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
-VOLTAGE_BUILD_TYPE := OFFICIAL
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sweet_eea-user 13 RKQ1.210614.002 V14.0.9.0.TKFEUXM release-keys"
 
 BUILD_FINGERPRINT := Redmi/sweet_eea/sweet:13/RKQ1.210614.002/V14.0.9.0.TKFEUXM:user/release-keys
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+WITH_GMS := true
+
+# Matrixx tags
+MATRIXX_MAINTAINER := Aravind
+MATRIXX_CHIPSET := SM6150
+MATRIXX_BATTERY := 5000mah
+MATRIXX_DISPLAY := 1080x2400
