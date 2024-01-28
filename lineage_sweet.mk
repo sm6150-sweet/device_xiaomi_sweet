@@ -27,12 +27,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Redmi/sweet_eea/sweet:13/RKQ1.210614.002/V14.0.9.0.TKFEUXM:user/release-keys
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-WITH_GMS := true
-
 # Matrixx tags
 MATRIXX_MAINTAINER := Aravind
 MATRIXX_CHIPSET := SM6150
 MATRIXX_BATTERY := 5000mah
 MATRIXX_DISPLAY := 1080x2400
+
+# Override Offending Entries
+TARGET_DISABLE_EPPE := true
