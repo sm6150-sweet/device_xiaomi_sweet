@@ -52,9 +52,13 @@
         <library name="dap_sw" path="libswdap.so"/>
         <library name="dap_hw" path="libhwdap.so"/>
         <!-- DOLBY END -->
+        <!--DOLBY SPATIALIZER-->
+        <library name="spatializer" path="libswspatializer.so"/>
         <!--DOLBY VQE-->
         <library name="vqe" path="libswvqe.so"/>
         <!--DOLBY END-->
+        <!--DOLBY SPATIALIZER-->
+        <effect name="spatializer" library="spatializer" uuid="ccd4cf09-a79d-46c2-9aae-06a1698d6c8f"/>
         <!--OZO capture START-->
         <library name="ozo_processing" path="libozoprocessing.so"/>
         <!--OZO capture END-->

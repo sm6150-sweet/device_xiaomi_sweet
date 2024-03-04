@@ -84,6 +84,7 @@ ro.vendor.audio.us.type=mius
 persist.vendor.audio.voicecall.speaker.stereo=true
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=false
+ro.audio.spatializer_enabled=true
 
 # Bluetooth
 bluetooth.hardware.power.operating_voltage_mv=3300
