@@ -411,6 +411,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    Xiaomi_prebuilts
 
 # Power
 PRODUCT_PACKAGES += \
