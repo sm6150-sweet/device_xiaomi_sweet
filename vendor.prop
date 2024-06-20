@@ -202,6 +202,8 @@ ro.surface_flinger.set_touch_timer_ms=4000
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.config.avoid_gfx_accel=true
+vendor.display.disable_metadata_dynamic_fps=1
+debug.sf.frame_rate_multiple_threshold=120
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -221,17 +223,6 @@ persist.vendor.qti.inputopts.movetouchslop=0.6
 ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
-
-# Display
-ro.vendor.bl.poll=true
-ro.vendor.display.ad=1
-ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
-ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
-ro.vendor.display.sensortype=2
-ro.vendor.histogram.enable=true
-ro.vendor.bcbc.enable=true
-vendor.display.disable_metadata_dynamic_fps=1
-debug.sf.frame_rate_multiple_threshold=120
 
 # Fluence
 ro.qc.sdk.audio.fluencetype=none
