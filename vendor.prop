@@ -119,6 +119,9 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
+# Blur
+persist.sys.sf.disable_blurs=1
+
 # Camera
 camera.disable_zsl_mode=1
 persist.vendor.camera.perflock.enable=0 
