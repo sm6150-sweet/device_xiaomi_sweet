@@ -217,6 +217,7 @@ persist.vendor.radio.vdp_on_ims_cap=1
 # Fingerprint
 persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_location=1080|990|200|local:4630946711218184577
+persist.vendor.fingerprint.sensor_modules=fortsense,fpc
 
 # Fluence
 ro.qc.sdk.audio.fluencetype=none
